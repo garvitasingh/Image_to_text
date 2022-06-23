@@ -197,22 +197,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String resultText = visionText.getText();
         StringBuilder text = new StringBuilder();
         for (Text.TextBlock block : visionText.getTextBlocks()) {
-//            String blockText = block.getText();
-//            text.append(blockText+" \n");
+            String blockText = block.getText();
+            text.append(blockText+" \n");
 //            Point[] blockCornerPoints = block.getCornerPoints();
 //            Rect blockFrame = block.getBoundingBox();
-            for (Text.Line line : block.getLines()) {
-                String lineText = line.getText();
-                text.append(lineText+" \n");
+//            for (Text.Line line : block.getLines()) {
+//                String lineText = line.getText();
+//                text.append(lineText+" \n");
 //                Point[] lineCornerPoints = line.getCornerPoints();
 //                Rect lineFrame = line.getBoundingBox();
-//                for (Text.Element element : line.getElements()) {
-//                    String elementText = element.getText();
-////                    text.append(elementText+" \n");
-//                    Point[] elementCornerPoints = element.getCornerPoints();
-//                    Rect elementFrame = element.getBoundingBox();
-//                }
-            }
+////                for (Text.Element element : line.getElements()) {
+////                    String elementText = element.getText();
+//////                    text.append(elementText+" \n");
+////                    Point[] elementCornerPoints = element.getCornerPoints();
+////                    Rect elementFrame = element.getBoundingBox();
+////                }
+//            }
         }
         List<Text.TextBlock> blocks = visionText.getTextBlocks();
         if (blocks.size() == 0){
